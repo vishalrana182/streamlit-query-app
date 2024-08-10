@@ -12,7 +12,7 @@ os.environ["PINECONE_API_KEY"] = ""
 os.environ["PINECONE_ENVIRONMENT"] = "" 
 
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-index_name = "mychatter"
+index_name = ""
 
 def load_and_split_docs(directory, chunk_size=500, chunk_overlap=20):
     loader = DirectoryLoader(directory)
